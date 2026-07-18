@@ -2,7 +2,9 @@
 {"dg-publish":true,"permalink":"/heartfelt/campagnes/magie-d-estyelle/chronologie-me/","tags":["gardenEntry"],"dg-note-properties":{}}
 ---
 
-
+-tx-
+------------ | :-----------: 
+|| test | content||
 # Premise : 
 
 Adeorna n'arrive pas a combattre efficacement les pirates dans la zone de non droit de la Descente des Eaux . C'est alors que la guilde des artisans contacte [[Euchère\|Euchère]] a travers [[Long Wu\|Long Wu]]  .

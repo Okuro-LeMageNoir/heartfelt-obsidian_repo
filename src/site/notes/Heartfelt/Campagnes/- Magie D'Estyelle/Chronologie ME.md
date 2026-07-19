@@ -4,7 +4,7 @@
 
 # Premise : 
 
-Adeorna n'arrive pas a combattre efficacement les pirates dans la zone de non droit de la Descente des Eaux . C'est alors que la guilde des artisans contacte [[Euchère\|Euchère]] a travers [[Long Wu\|Long Wu]]  .
+Adeorna n'arrive pas a combattre efficacement les pirates dans la zone de non droit de la Descente des Eaux . C'est alors que la guilde des artisans contacte [[Heartfelt/Monde Connu/-Descente des Eaux/Euchère\|Euchère]] a travers [[Long Wu\|Long Wu]]  .
 
 Le clan des Uhniket sont au courant et préparent un plan d'assassinat pour tuer Long Wu et voler le plan que ce dernier transporte.
 

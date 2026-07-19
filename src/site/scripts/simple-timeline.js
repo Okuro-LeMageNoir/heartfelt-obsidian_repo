@@ -133,12 +133,41 @@
   // Horizontal : stacked = une ligne par timeline, mixed = tout sur une ligne
   function renderHorizontal(names, mode) {
     if (mode === "stacked") {
-      var rows = names.map(function (n) {
-        return '<div class="stl-row"><div class="stl-row-label">' +
-          escapeHtml(n) + '</div><div class="stl-track">' +
-          eventsForTimeline(n).map(renderEvent).join("") + "</div></div>";
-      }).join("");
-      return '<div class="stl stl-horizontal stl-stacked">' + rows + "</div>";
+      // Grille partagée : une colonne par date unique (toutes timelines confondues),
+      // une ligne par timeline. Les événements à la même date s'alignent verticalement.
+      var perTimeline = names.map(function (n) { return eventsForTimeline(n); });
+      var dateList = [];
+      var seen = {};
+      perTimeline.forEach(function (evs) {
+        evs.forEach(function (e) {
+          var k = e.start.sortKey;
+          if (!(k in seen)) { seen[k] = true; dateList.push({ key: k, label: e.start.label }); }
+        });
+      });
+      dateList.sort(function (a, b) { return a.key < b.key ? -1 : a.key > b.key ? 1 : 0; });
+
+      var nDates = dateList.length;
+      var cols = "auto " + (nDates ? Array(nDates).fill("minmax(130px, max-content)").join(" ") : "");
+      var html = '<div class="stl-grid" style="grid-template-columns:' + cols + ';">';
+
+      // Une ligne par timeline (pas d'en-tête de dates : elles sont déjà dans chaque événement)
+      names.forEach(function (n, r) {
+        html += '<div class="stl-row-label">' + escapeHtml(n) + '</div>';
+        var byDate = {};
+        perTimeline[r].forEach(function (e) {
+          var k = e.start.sortKey;
+          (byDate[k] = byDate[k] || []).push(e);
+        });
+        dateList.forEach(function (d) {
+          var cell = byDate[d.key];
+          html += cell && cell.length
+            ? '<div class="stl-cell">' + cell.map(renderEvent).join("") + '</div>'
+            : '<div class="stl-cell stl-cell-empty"></div>';
+        });
+      });
+
+      html += '</div>';
+      return '<div class="stl stl-horizontal stl-stacked">' + html + '</div>';
     }
     var all = [];
     names.forEach(function (n) { all = all.concat(eventsForTimeline(n)); });

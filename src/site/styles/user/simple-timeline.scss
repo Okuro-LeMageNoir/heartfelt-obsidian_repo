@@ -24,24 +24,29 @@
 
 /* === Layout horizontal === */
 .stl-horizontal { overflow-x: auto; padding-bottom: 0.5rem; }
-.stl-track { display: flex; gap: 1rem; }
 
-.stl-row {
-  display: flex;
-  align-items: stretch;
-  gap: 0.5rem;
-  border-top: 1px solid var(--background-modifier-border, #e0e0e0);
-  padding-top: 0.5rem;
-  margin-top: 0.5rem;
+/* mixed : une seule piste flex, tri chronologique global */
+.stl-mixed .stl-track { display: flex; gap: 1rem; }
+.stl-mixed .stl-event { flex: 0 0 220px; flex-direction: column; }
+.stl-mixed .stl-event-img { flex: none; }
+.stl-mixed .stl-event-img img { width: 100%; height: 100px; }
+
+/* stacked : grille alignée par date (colonne = date, ligne = timeline) */
+.stl-grid {
+  display: grid;
+  gap: 0.75rem;
+  align-items: start;
 }
 .stl-row-label {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
   font-weight: 600;
-  padding: 0.25rem 0;
   color: var(--text-muted, #888);
+  padding-right: 0.75rem;
+  white-space: nowrap;
+  align-self: center;
 }
+.stl-cell { display: flex; flex-direction: column; gap: 0.5rem; }
+.stl-cell-empty { }
 
-.stl-horizontal .stl-event { flex: 0 0 220px; flex-direction: column; }
-.stl-horizontal .stl-event-img { flex: none; }
-.stl-horizontal .stl-event-img img { width: 100%; height: 100px; }
+.stl-stacked .stl-event { flex-direction: column; }
+.stl-stacked .stl-event-img { flex: none; }
+.stl-stacked .stl-event-img img { width: 100%; height: 100px; }

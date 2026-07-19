@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/heartfelt/campagnes/magie-d-estyelle/me-jour-d-assasinat/","dg-note-properties":{"fc-date":"627-05-16","fc-end":"627-05-16","timelines":["Magie d'Estyelle"],"tl-title":"Assassinat","tl-image":"Fen_Loup.png","tl-summary":"Le plan entre en actions . Mais malheureusement , tout ne se passe pas comme prévu ..."}}
+{"fc-date":"627-05-16","fc-end":"627-05-16","timelines":["Magie d'Estyelle"],"tl-title":"Assassinat","tl-image":"Fen_Loup.png","tl-summary":"Le plan entre en actions . Mais malheureusement , tout ne se passe pas comme prévu ...","dg-publish":true,"permalink":"/heartfelt/campagnes/magie-d-estyelle/me-jour-d-assasinat/","dgPassFrontmatter":true,"dg-note-properties":{"fc-date":"627-05-16","fc-end":"627-05-16","timelines":["Magie d'Estyelle"],"tl-title":"Assassinat","tl-image":"Fen_Loup.png","tl-summary":"Le plan entre en actions . Mais malheureusement , tout ne se passe pas comme prévu ..."}}
 ---
 
 ## L'Exécution du Plan :

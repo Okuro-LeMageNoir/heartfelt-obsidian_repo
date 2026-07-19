@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/heartfelt/campagnes/magie-d-estyelle/chronologie-me/","tags":["gardenEntry"],"dg-note-properties":{}}
+{"dg-publish":true,"dg-home":true,"permalink":"/heartfelt/campagnes/magie-d-estyelle/chronologie-me/","tags":["gardenEntry"],"dgPassFrontmatter":true,"dg-note-properties":{}}
 ---
 
 -tx-
@@ -17,6 +17,7 @@ C'est alors que l'[[Heartfelt/Karder/Membres/Uhniket/Officier Iks\|Officier Iks]
 
 ```timeline-cal
 names: Magie d'Estyelle
+jumpToToday: true
 ```
 
 

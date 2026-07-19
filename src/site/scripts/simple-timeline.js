@@ -15,7 +15,7 @@
   // Préfixe utilisé pour résoudre un nom de fichier simple provenant de `tl-image`.
   // Si tu utilises `tl-image` avec un chemin complet (ex. /img/cover.webp) ou une URL,
   // il est utilisé tel quel. Sinon on préfixe avec IMG_BASE.
-  var IMG_BASE = "/img/";
+  var IMG_BASE = "/img/user/";
 
   var EVENTS = window.__STL_EVENTS__ || [];
 

@@ -1,0 +1,31 @@
+{#
+  Simple-Timeline (rendu web) — composant custom Digital Garden
+  Émet côté serveur (Nunjucks) la liste des événements à partir de `basesNotes`
+  (index global des notes + frontmatter complet), puis charge le script de rendu.
+  Emplacement attendu : src/site/_includes/components/user/notes/afterContent/
+
+  NB : avec la fonctionnalité "note properties" du plugin Digital Garden, les
+  propriétés Obsidian sont sérialisées dans `dg-note-properties` (objet JSON).
+  On lit donc ce champ en priorité, et on retombe sur le frontmatter racine
+  pour les notes qui auraient les propriétés en clair (YAML classique).
+#}
+<script>
+window.__STL_EVENTS__ = window.__STL_EVENTS__ || [];
+{% for note in basesNotes %}
+{% set m = note.metadata %}
+{% set p = m["dg-note-properties"] or m %}
+{% if p["fc-date"] and p["timelines"] %}
+window.__STL_EVENTS__.push({
+  url: {{ note.url | jsonify | safe }},
+  path: {{ note.path | jsonify | safe }},
+  timelines: {{ p["timelines"] | jsonify | safe }},
+  fcDate: {{ p["fc-date"] | jsonify | safe }},
+  fcEnd: {% if p["fc-end"] %}{{ p["fc-end"] | jsonify | safe }}{% else %}null{% endif %},
+  title: {% if p["tl-title"] %}{{ p["tl-title"] | jsonify | safe }}{% else %}{{ note.fileSlug | jsonify | safe }}{% endif %},
+  summary: {% if p["tl-summary"] %}{{ p["tl-summary"] | jsonify | safe }}{% else %}null{% endif %},
+  image: {% if p["tl-image"] %}{{ p["tl-image"] | jsonify | safe }}{% else %}null{% endif %}
+});
+{% endif %}
+{% endfor %}
+</script>
+<script src="/scripts/simple-timeline.js" defer></script>

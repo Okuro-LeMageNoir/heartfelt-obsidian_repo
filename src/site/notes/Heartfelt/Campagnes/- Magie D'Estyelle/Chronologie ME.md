@@ -17,7 +17,6 @@ C'est alors que l'[[Heartfelt/Karder/Membres/Uhniket/Officier Iks\|Officier Iks]
 
 ```timeline-cal
 names: Magie d'Estyelle
-jumpToToday: true
 ```
 
 

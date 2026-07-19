@@ -13,7 +13,7 @@ C'est alors que l'[[Heartfelt/Karder/Membres/Uhniket/Officier Iks\|Officier Iks]
 # Timeline des Evenements :
 
 ```timeline-h
-names: Magie d'Estyelle, Magie d'Estyelle PJs
+names: Magie d'Estyelle, Magie d'Estyelle PJs, Magie D'Estyelle Autres
 mode: stacked
 jumpToToday: true
 ```

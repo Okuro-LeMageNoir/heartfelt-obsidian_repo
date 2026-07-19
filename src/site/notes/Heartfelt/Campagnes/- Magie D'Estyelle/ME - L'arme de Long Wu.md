@@ -1,7 +1,10 @@
 ---
-{"fc-date":"624-03-26","fc-end":"627-05-16","timelines":["Magie d'Estyelle PJs"],"tl-title":"ME - L'arme de Long Wu","tl-image":"Schema_Canon_Wu.png","tl-summary":"La guilde des Artisans de Créatis develope une arme , mais a besoin de tests . Ils se tournent alors vers le conflit qui oppose Adeorna et la zone de non droit dans la Descente des Eaux . Malheusement , cela ne plait pas au clan des Uhnikets.","dg-publish":true,"permalink":"/heartfelt/campagnes/magie-d-estyelle/me-l-arme-de-long-wu/","dgPassFrontmatter":true,"dg-note-properties":{"fc-date":"624-03-26","fc-end":"627-05-16","timelines":["Magie d'Estyelle PJs"],"tl-title":"ME - L'arme de Long Wu","tl-image":"Schema_Canon_Wu.png","tl-summary":"La guilde des Artisans de Créatis develope une arme , mais a besoin de tests . Ils se tournent alors vers le conflit qui oppose Adeorna et la zone de non droit dans la Descente des Eaux . Malheusement , cela ne plait pas au clan des Uhnikets."}}
+{"fc-date":"624-03-26","fc-end":"627-05-16","timelines":["Magie d'Estyelle PJs"],"tl-title":"ME - L'arme de Long Wu","tl-image":"Schema_Canon_Wu.png","tl-summary":null,"dg-publish":true,"permalink":"/heartfelt/campagnes/magie-d-estyelle/me-l-arme-de-long-wu/","dgPassFrontmatter":true,"dg-note-properties":{"fc-date":"624-03-26","fc-end":"627-05-16","timelines":["Magie d'Estyelle PJs"],"tl-title":"ME - L'arme de Long Wu","tl-image":"Schema_Canon_Wu.png","tl-summary":null}}
 ---
 
+
+> [!Summary]
+> *La guilde des Artisans de Créatis develope une arme , mais a besoin de tests . Ils se tournent alors vers le conflit qui oppose Adeorna et la zone de non droit dans la Descente des Eaux . Malheusement , cela ne plait pas au clan des Uhnikets.*
 
 # Le Canon a Sul
 Cette arme , conçu par [[Long Wu\|Long Wu]] , est sensé utilisé du Sul appauvrit chargé pour concentrer les flux avoisinant et les tirer dans une directions.

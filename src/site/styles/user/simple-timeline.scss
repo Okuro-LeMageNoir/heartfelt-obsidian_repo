@@ -47,6 +47,6 @@
 .stl-cell { display: flex; flex-direction: column; gap: 0.5rem; }
 .stl-cell-empty { }
 
-.stl-stacked .stl-event { flex-direction: column; }
+.stl-stacked .stl-event { flex-direction: row; }
 .stl-stacked .stl-event-img { flex: none; }
 .stl-stacked .stl-event-img img { width: 100%; height: 100px; }

@@ -138,6 +138,8 @@
       var perTimeline = names.map(function (n) { return eventsForTimeline(n); });
       var dateList = [];
       var seen = {};
+      var minmax_str = "minmax(450px, 450px)"
+
       perTimeline.forEach(function (evs) {
         evs.forEach(function (e) {
           var k = e.start.sortKey;
@@ -147,7 +149,7 @@
       dateList.sort(function (a, b) { return a.key < b.key ? -1 : a.key > b.key ? 1 : 0; });
 
       var nDates = dateList.length;
-      var cols = "auto " + (nDates ? Array(nDates).fill("minmax(130px, max-content)").join(" ") : "");
+      var cols = "auto " + (nDates ? Array(nDates).fill(minmax_str).join(" ") : "");
       var html = '<div class="stl-grid" style="grid-template-columns:' + cols + ';">';
 
       // Une ligne par timeline (pas d'en-tête de dates : elles sont déjà dans chaque événement)
